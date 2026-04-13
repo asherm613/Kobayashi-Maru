@@ -1,0 +1,55 @@
+char choiceAB(const char *optA, const char *optB) {
+    char c;
+
+    printf("%s\n", optA);
+    printf("%s\n", optB);
+    printf("Choice (A/B): ");
+
+    while (1) {
+        scanf(" %c", &c);
+
+        if (c == 'A' || c == 'a')
+            return 'A';
+        if (c == 'B' || c == 'b')
+            return 'B';
+
+        printf("Invalid choice. Please enter A or B: ");
+    }
+}
+printf("  
+                ____ _____  _    ____     _____ ____  _____ _  __                  
+              / ___|_   _|/ \  |  _ \   |_   _|  _ \| ____| |/ /                  
+              \___ \ | | / _ \ | |_) |    | | | |_) |  _| | ' /                   
+               ___) || |/ ___ \|  _ <     | | |  _ <| |___| . \                   
+  _  _____  __|____/_|_/_/ __\_\_| \_\_  _|_|_|_|_\_\_____|_|\_\ _    ____  _   _ 
+ | |/ / _ \| __ )  / \\ \ / // \  / ___|| | | |_ _|   |  \/  |  / \  |  _ \| | | |
+ | ' / | | |  _ \ / _ \\ V // _ \ \___ \| |_| || |    | |\/| | / _ \ | |_) | | | |
+ | . \ |_| | |_) / ___ \| |/ ___ \ ___) |  _  || |    | |  | |/ ___ \|  _ <| |_| |
+ |_|\_\___/|____/_/   \_\_/_/   \_\____/|_| |_|___|   |_|  |_/_/   \_\_| \_\\___/ 
+            Do you have what it takes to win the no win scenario?
+                               Press A to start                                                                                
+")
+if (getAB() == 'A' || getAB() == 'a') {
+    printf("You recive a distress call from the Kobayashi Maru inside the Neutral Zone. Do you respond to the distress call or ignore it?\n");
+}
+if (getAB() == 'A' || getAB() == 'a') {
+    printf("You enter the Neutral Zone and find the Kobayashi Maru under attack by Klingon warships. Do you engage the Klingons to protect the Kobayashi Maru or attempt to rescue the crew without engaging?\n");
+}
+else {
+    printf("All hands this is Captain Sulu we will be heading to the nearest starbase to try and get a klingon representative.\n");
+}
+if (getAB() == 'A' || getAB() == 'a') {
+    printf("you enagage and you take a massive amount of damage do you retreat or try one last thing?\n");
+}
+else {
+    printf("you try not to enagage and are destroyed - you better pray because Klingons don't take prisoners.\n");
+}
+if (getAB() == 'A' || getAB() == 'a') {
+    printf("All hands this is capatin Checkov prepare for ramming speed!\n");
+}
+else {
+    printf("you retreat and live to fight another day however the Kobayashi Maru is lost.\n");
+}
+if (getAB() == 'A' || getAB() == 'a') {
+    printf("You die\n");
+}
