@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
 char checkForC(void) {
     char c;
@@ -31,12 +32,15 @@ char getAB(void) {
 }
 
 int main(void) {
+    // Play MP3 in background
+    ShellExecute(NULL, "open", "TMP-Enterprise.mp3", NULL, NULL, SW_HIDE);
+    
     printf("\n");
     printf("  ____ _____  _     ____     _____ ____  _____ _  __     \n");
     printf(" / ___|_   _|/ \   |  _ \   |_   _|  _ \| ____| |/ /\n");
     printf(" \___ \ | | / _ \  | |_) |    | | | |_) |  _| | ' / \n");
     printf("  ___) || |/ ___ \ |  __<     | | |  _ <| |___| . \ \n");
-    printf(" (______  __|____/_|_/___\ __\_\_| \_\_ _\_|_|_|_\_\_____|_|\_\ _    ____  _   _\n");
+    printf(" /______| __|____/_|_/___\ __\_\_| \_\_ _\_|_|_|_\_\_____|_|\_\ _    ____  _   _\n");
     printf(" | |/ / _ \| __ )  / \\ \ / // \  / ___|| | | |_ _|   |  \/  |  / \  |  _ \| | | |\n");
     printf(" | ' / | | |  _ \ / _ \\ V // _ \ \___ \| |_| || |    | |\/| | / _ \ | |_) | | | |\n");
     printf(" | . \ |_| | |_) / ___ \| |/ ___ \ ___) |  _  || |    | |  | |/ ___ \|  _ <| |_| | \n");
