@@ -36,15 +36,15 @@ int main(void) {
     ShellExecute(NULL, "open", "TMP-Enterprise.mp3", NULL, NULL, SW_HIDE);
     
     printf("\n");
-    printf("  ____ _____  _     ____     _____ ____  _____ _  __     \n");
-    printf(" / ___|_   _|/ \   |  _ \   |_   _|  _ \| ____| |/ /\n");
-    printf(" \___ \ | | / _ \  | |_) |    | | | |_) |  _| | ' / \n");
-    printf("  ___) || |/ ___ \ |  __<     | | |  _ <| |___| . \ \n");
-    printf(" /______| __|____/_|_/___\ __\_\_| \_\_ _\_|_|_|_\_\_____|_|\_\ _    ____  _   _\n");
+    printf("  ____ _____  _     ____    _____ ____  _____ _  __\n");
+    printf(" / ___|_   _|/ \   |  _ \  |_   _|  _ \| ____| |/ /\n");
+    printf(" \___ \ | | / _ \  | |_) |   | | | |_) |  _| | ' / \n");
+    printf("  ___) || |/ ___ \ |  __<    | | |  _ <| |___| . \ \n");
+    printf(" /_____||_| |___|\|_/___\  __|_| | |_\_\_\_|_|_|__\    _______   _    ____  _   _\n");
     printf(" | |/ / _ \| __ )  / \\ \ / // \  / ___|| | | |_ _|   |  \/  |  / \  |  _ \| | | |\n");
     printf(" | ' / | | |  _ \ / _ \\ V // _ \ \___ \| |_| || |    | |\/| | / _ \ | |_) | | | |\n");
-    printf(" | . \ |_| | |_) / ___ \| |/ ___ \ ___) |  _  || |    | |  | |/ ___ \|  _ <| |_| | \n");
-    printf(" |_|\_\___/|____/_/   \_\_/_/   \_\____/|_| |_|___|   |_|  |_/_/   \_\_| \_\\___/  \n");
+    printf(" | . \ |_| | |_) / ___ \| |/ ___ \ ___) |  _  || |    | |  | |/ ___ \|  _ <| |_| |\n");
+    printf(" |_|\_\___/|____/_/   \_\_/_/   \_\____/|_| |_|___|   |_|  |_/_/   \_\_| \_\\___/\n");
     printf("\n");
     printf("            Do you have what it takes to win the no beat scenario?\n");
     printf("                               Press A to start \n");
@@ -66,7 +66,7 @@ int main(void) {
     if (getAB() == 'A') {
         printf("You engage and you take a massive amount of damage. Do you B retreat or A try one last thing?\n");
     } else {
-        printf("You try not to engage and lose engines and weapons - You'd better pray because Klingons don't take prisoners.\n");
+        printf("You try not to engage and lose engines and weapons\n");
     }
     
     if (getAB() == 'A') {
@@ -76,7 +76,7 @@ int main(void) {
     }
     
     if (getAB() == 'A') {
-        printf("You die\n");
+        printf("You'd better pray because Klingons don't take prisoners.\n");
     }
 
     return 0;
