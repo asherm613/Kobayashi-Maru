@@ -33,19 +33,19 @@ char getAB(void) {
 
 int main(void) {
     // Play MP3 in background
-    ShellExecute(NULL, "open", "TMP-Enterprise.mp3", NULL, NULL, SW_HIDE);
+    ShellExecute(NULL, "open", "TNG end credits.mp3", NULL, NULL, SW_HIDE);
     
-    printf("\n");
+    printf(" \n");
     printf("  ____ _____  _     ____    _____ ____  _____ _  __\n");
     printf(" / ___|_   _|/ \   |  _ \  |_   _|  _ \| ____| |/ /\n");
     printf(" \___ \ | | / _ \  | |_) |   | | | |_) |  _| | ' / \n");
     printf("  ___) || |/ ___ \ |  __<    | | |  _ <| |___| . \ \n");
-    printf(" /_____||_| |___|\|_/___\  __|_| | |_\_\_\_|_|_|__\    _______   _    ____  _   _\n");
+    printf(" |_____||_| |___|\|_/___\  __|_| | |_\_\_\_|_|_|__\    _______   _    ____  _   _\n");
     printf(" | |/ / _ \| __ )  / \\ \ / // \  / ___|| | | |_ _|   |  \/  |  / \  |  _ \| | | |\n");
     printf(" | ' / | | |  _ \ / _ \\ V // _ \ \___ \| |_| || |    | |\/| | / _ \ | |_) | | | |\n");
     printf(" | . \ |_| | |_) / ___ \| |/ ___ \ ___) |  _  || |    | |  | |/ ___ \|  _ <| |_| |\n");
     printf(" |_|\_\___/|____/_/   \_\_/_/   \_\____/|_| |_|___|   |_|  |_/_/   \_\_| \_\\___/\n");
-    printf("\n");
+    printf(" \n");
     printf("            Do you have what it takes to win the no beat scenario?\n");
     printf("                               Press A to start \n");
 
